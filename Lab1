@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+
+
+    int pattern = 0b11001;
+    int state;
+    int i;
+
+for(i=5; i>0;i--)
+{
+
+    state = (pattern>>i-1) & 0b1;
+
+    printf("Pattern: ");
+    printf("%d\n",pattern);
+    printf("State: ");
+    printf("%d\n",state);
+
+}
+    return 0;
+}
